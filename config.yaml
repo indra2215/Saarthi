@@ -1,0 +1,94 @@
+# config.yaml — All tunable values. No magic numbers in code.
+
+models:
+  embedder: "all-MiniLM-L6-v2"
+  reranker: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+
+api_keys:
+  gemini: []   # Loaded dynamically from GEMINI_API_KEY environment variable or .env
+  groq: []     # Loaded dynamically from GROQ_API_KEY environment variable or .env
+
+llm:
+  provider: "gemini"            # "gemini" | "groq" | "template"
+  gemini_model: "gemini-1.5-flash"
+  groq_model: "llama3-8b-8192"
+  fallback_order: ["gemini", "groq", "template"]
+
+retrieval:
+  bm25_top_k: 50
+  vector_top_k: 50
+  rrf_k: 60
+  rrf_top_n: 30
+  rerank_top_n: 10
+  rerank_threshold: 0.0
+
+entity_resolution:
+  high_threshold: 12
+  low_threshold: 4
+  disambiguation_gap: 0.15
+  weights:
+    orcid_match: 10
+    email_match: 10
+    department_match: 3
+    qualification_sim: 3
+    publication_overlap: 2
+    coauthor_overlap: 1
+
+chunking:
+  min_tokens: 100
+  max_tokens: 250
+  overlap: 20
+
+slots:
+  working_start: "09:00"
+  working_end: "17:00"
+  min_gap_min: 30
+  next_n_slots: 5
+
+trace:
+  stage_delay_ms: 800
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  contact_email: "team14.jig26@kmec.edu.in"
+
+session:
+  max_concurrent_queries: 50
+  result_ttl_hours: 24
+  secret_key: "kmec-faculty-discovery-secret-2026"
+
+teacher:
+  session_expiry_hours: 8
+  default_password_hash: "$2b$12$placeholder"
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  index_dir: "data/processed/index"
+  info_json: "data/raw/info.json"
+
+# Predefined question suggestions shown in the chat UI
+predefined_questions:
+  topic:
+    - "Who is working on machine learning and deep learning?"
+    - "I want to research cybersecurity and network security"
+    - "Show me faculty working on cloud computing"
+    - "Who can guide me on battery technology and energy systems?"
+    - "I need a supervisor for computer vision research"
+    - "Which professors work on IoT and embedded systems?"
+    - "Who does research on big data and data analytics?"
+    - "Find faculty working on software engineering and DevOps"
+  name:
+    - "Tell me about Dr. Balakrishna"
+    - "Find Dr. Srinivas"
+    - "Show me professors from CSE department"
+    - "Who are the HODs?"
+  project:
+    - "Show projects related to deep learning"
+    - "Which faculty have industry-funded projects?"
+    - "Find projects on IoT and smart systems"
+  no_data_fallback:
+    - "Sorry, no faculty matched your query. Try a broader topic like 'machine learning' or 'cloud computing'."
+    - "No results found. Try searching by department: 'CSE faculty' or 'IT department professors'."
+    - "I couldn't find a match. Would you like to see all available research domains?"

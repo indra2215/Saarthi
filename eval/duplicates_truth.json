@@ -1,0 +1,65 @@
+[
+  {
+    "pair_id": "DUP-01",
+    "normalized_name": "k srinivas",
+    "query": "Dr. K. Srinivas",
+    "faculty_a": {
+      "faculty_id": "F003",
+      "display_name": "Dr.K.Srinivas",
+      "department_code": "CSE",
+      "primary_domain": "Cloud Infrastructure & Systems",
+      "synthetic": false
+    },
+    "faculty_b": {
+      "faculty_id": "F004",
+      "display_name": "Dr.K.Srinivas",
+      "department_code": "IT",
+      "primary_domain": "Network Security & Cryptography",
+      "synthetic": true
+    },
+    "disambiguation_signals": ["department_code", "primary_domain", "email"],
+    "expected_action": "disambiguation_picker"
+  },
+  {
+    "pair_id": "DUP-02",
+    "normalized_name": "p kumar",
+    "query": "Dr. P. Kumar",
+    "faculty_a": {
+      "faculty_id": "F132",
+      "display_name": "Dr.P.Kumar",
+      "department_code": "CSE",
+      "primary_domain": "Artificial Intelligence & Machine Learning",
+      "synthetic": true
+    },
+    "faculty_b": {
+      "faculty_id": "F133",
+      "display_name": "Dr.P.Kumar",
+      "department_code": "ECE-ALLIED",
+      "primary_domain": "Signal Processing & VLSI Design",
+      "synthetic": true
+    },
+    "disambiguation_signals": ["department_code", "primary_domain", "qualification"],
+    "expected_action": "disambiguation_picker"
+  },
+  {
+    "pair_id": "DUP-03",
+    "normalized_name": "sandeep kumar",
+    "query": "Sandeep Kumar",
+    "faculty_a": {
+      "faculty_id": "FAC-4-22",
+      "display_name": "Mr. G SANDEEP KUMAR",
+      "department_code": "ECE-ALLIED",
+      "primary_domain": "Wireless Communication & 5G/6G Networks",
+      "synthetic": false
+    },
+    "faculty_b": {
+      "faculty_id": "FAC-4-23",
+      "display_name": "Mr. SANDEEP KUMAR",
+      "department_code": "ECE-ALLIED",
+      "primary_domain": "Microwave & Antenna Engineering",
+      "synthetic": false
+    },
+    "disambiguation_signals": ["primary_domain", "research_areas"],
+    "expected_action": "disambiguation_picker"
+  }
+]

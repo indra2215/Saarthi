@@ -1,0 +1,82 @@
+abbreviations:
+  NLP: "natural language processing"
+  ML: "machine learning"
+  LLM: "large language model"
+  CV: "computer vision"
+  IR: "information retrieval"
+  DL: "deep learning"
+  RL: "reinforcement learning"
+  IOT: "internet of things"
+  EV: "electric vehicle"
+  HCI: "human computer interaction"
+  AI: "artificial intelligence"
+  OS: "operating systems"
+  DB: "database"
+  SE: "software engineering"
+  CN: "computer networks"
+  DS: "data structures"
+  DSP: "digital signal processing"
+  VLSI: "very large scale integration"
+  FPGA: "field programmable gate array"
+  AR: "augmented reality"
+  VR: "virtual reality"
+
+synonyms:
+  "natural language processing": ["text mining", "computational linguistics", "nlp", "text analysis", "language model", "sentiment analysis"]
+  "machine learning": ["statistical learning", "supervised learning", "ml models", "predictive modeling"]
+  "deep learning": ["neural network", "deep neural network", "dnn", "cnn", "rnn", "lstm", "transformer model"]
+  "computer vision": ["image processing", "object detection", "image recognition", "visual computing"]
+  "cybersecurity": ["cyber security", "information security", "network security", "infosec", "ethical hacking", "intrusion detection"]
+  "cloud computing": ["cloud architecture", "virtualization", "kubernetes", "containerization", "microservices", "serverless"]
+  "big data": ["hadoop", "apache spark", "data warehousing", "etl", "nosql", "data pipeline"]
+  "internet of things": ["iot", "smart devices", "embedded systems", "sensor networks", "edge computing"]
+  "software engineering": ["agile", "devops", "ci cd", "design patterns", "software architecture", "code quality"]
+  "artificial intelligence": ["ai", "expert systems", "knowledge representation", "intelligent systems"]
+  "signal processing": ["digital signal processing", "dsp", "audio processing", "image processing"]
+  "very large scale integration": ["vlsi", "chip design", "semiconductor", "fpga", "embedded hardware"]
+  "data mining": ["pattern recognition", "association rules", "clustering", "classification algorithms"]
+  "bioinformatics": ["computational biology", "genomics", "proteomics", "dna analysis"]
+  "robotics": ["autonomous systems", "robot control", "path planning", "mechatronics"]
+  "smart agriculture": ["precision farming", "agricultural iot", "crop monitoring", "drone agriculture"]
+  "medical imaging": ["healthcare ai", "radiology ai", "mri analysis", "ct scan processing"]
+  "federated learning": ["distributed learning", "privacy preserving ml", "collaborative learning"]
+  "graph neural networks": ["gnn", "graph learning", "knowledge graphs", "graph analytics"]
+  "blockchain": ["distributed ledger", "cryptocurrency", "smart contracts", "decentralized"]
+  "renewable energy": ["solar energy", "wind energy", "battery storage", "energy harvesting"]
+  "power systems": ["electrical power", "smart grid", "energy management", "power electronics"]
+
+canonical_topics:
+  - "natural language processing"
+  - "machine learning"
+  - "deep learning"
+  - "computer vision"
+  - "information retrieval"
+  - "cybersecurity"
+  - "cloud computing"
+  - "big data"
+  - "internet of things"
+  - "software engineering"
+  - "artificial intelligence"
+  - "signal processing"
+  - "very large scale integration"
+  - "data mining"
+  - "bioinformatics"
+  - "robotics"
+  - "data structures"
+  - "algorithms"
+  - "computer networks"
+  - "database systems"
+  - "operating systems"
+  - "smart agriculture"
+  - "medical imaging"
+  - "federated learning"
+  - "graph neural networks"
+  - "blockchain"
+  - "renewable energy"
+  - "power systems"
+  - "control systems"
+  - "communication systems"
+  - "human computer interaction"
+  - "augmented reality"
+  - "virtual reality"
+  - "quantum computing"

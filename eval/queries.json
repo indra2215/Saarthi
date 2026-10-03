@@ -1,0 +1,64 @@
+[
+  {
+    "query_id": "Q01",
+    "query": "machine learning and deep learning",
+    "type": "topic",
+    "notes": "Broad ML query — should return CSE AI/ML faculty"
+  },
+  {
+    "query_id": "Q02",
+    "query": "cybersecurity and network security",
+    "type": "topic",
+    "notes": "Security domain — should return CSE/IT security faculty"
+  },
+  {
+    "query_id": "Q03",
+    "query": "cloud computing and distributed systems",
+    "type": "topic",
+    "notes": "Cloud domain — should return faculty with cloud/distributed expertise"
+  },
+  {
+    "query_id": "Q04",
+    "query": "natural language processing NLP",
+    "type": "topic",
+    "notes": "NLP-specific — tests abbreviation expansion"
+  },
+  {
+    "query_id": "Q05",
+    "query": "IoT Internet of Things embedded systems",
+    "type": "topic",
+    "notes": "IoT/embedded — should return ECE + CSE faculty"
+  },
+  {
+    "query_id": "Q06",
+    "query": "computer vision image processing",
+    "type": "topic",
+    "notes": "Computer vision — narrow domain test"
+  },
+  {
+    "query_id": "Q07",
+    "query": "data analytics big data",
+    "type": "topic",
+    "notes": "Data science domain"
+  },
+  {
+    "query_id": "Q08",
+    "query": "VLSI design signal processing",
+    "type": "topic",
+    "notes": "ECE domain — tests cross-department retrieval"
+  },
+  {
+    "query_id": "Q09",
+    "query": "wireless communication 5G networks antenna",
+    "type": "topic",
+    "notes": "ECE domain — wireless communication and 5G/6G antenna engineering"
+  },
+  {
+    "query_id": "Q-DUP",
+    "query": "Dr. P. Kumar",
+    "type": "name_disambiguation",
+    "notes": "Deliberate duplicate-name query — two Dr. P. Kumar exist (CSE and ECE dept). System must return disambiguation picker.",
+    "expected_candidates": ["F132", "F133"],
+    "disambiguation_signals": ["department_code", "primary_domain", "qualification"]
+  }
+]

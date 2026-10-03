@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+web/node_modules/
+web/dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+venv/
+.venv/
+env/
+
+# Databases / Logs
+*.db-journal
+data/*.db-journal
+*.log
+
+# Environment & Secrets
+.env
+.env.local
+*.env
+
+# OS / IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

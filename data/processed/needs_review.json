@@ -1,0 +1,20 @@
+[
+  {
+    "record_a": "FAC-1-9",
+    "record_b": "FAC-1-36",
+    "score": 6.0,
+    "reason": "Score between LOW and HIGH thresholds"
+  },
+  {
+    "record_a": "FAC-1-9",
+    "record_b": "FAC-1-37",
+    "score": 6.0,
+    "reason": "Score between LOW and HIGH thresholds"
+  },
+  {
+    "record_a": "FAC-1-36",
+    "record_b": "FAC-1-37",
+    "score": 6.0,
+    "reason": "Score between LOW and HIGH thresholds"
+  }
+]
